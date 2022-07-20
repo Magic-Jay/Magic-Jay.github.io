@@ -128,6 +128,16 @@
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
   </nav>
 </div>
 
@@ -199,7 +209,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-07-20 00:05:06" itemprop="dateModified" datetime="2022-07-20T00:05:06-07:00">2022-07-20</time>
+      <time title="Modified: 2022-07-20 00:44:12" itemprop="dateModified" datetime="2022-07-20T00:44:12-07:00">2022-07-20</time>
     </span>
 
   
@@ -233,6 +243,18 @@
 <p>Create the according blog pages using <code>hexo</code>. </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ hexo new page categories </span><br><span class="line">$ hexo new page tags </span><br><span class="line">$ hexo new page about </span><br></pre></td></tr></table></figure>
 
+<h4 id="Add-Tags"><a href="#Add-Tags" class="headerlink" title="Add Tags"></a>Add Tags</h4><p>Open <code>blog/source/tags/index.md</code> file, by default it looks like below:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: tags</span><br><span class="line"><span class="built_in">date</span>: 2022-07-20 00:05:23</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>Add <code>type: tags</code> so it looks like:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: tags</span><br><span class="line"><span class="built_in">date</span>: 2022-07-20 00:05:23</span><br><span class="line"><span class="built_in">type</span>: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>Go to a post article that want to add tags for, add a single <code>tag: test</code> or add multiple tags <code>tag: [test1, test2]</code>.<br><img src="https://images-934f5794-0619-11ed-b939-0242ac120002.s3.us-west-2.amazonaws.com/Screen+Shot+2022-07-20+at+12.33.58+AM.png" alt="Alt"></p>
+<p>Go to <code>Tags</code> Page on the menu, the tags show up successfully.<br><img src="https://images-934f5794-0619-11ed-b939-0242ac120002.s3.us-west-2.amazonaws.com/tags+_+Jay's+Blog.png" alt="Alt"></p>
+<h4 id="Add-Categories"><a href="#Add-Categories" class="headerlink" title="Add Categories"></a>Add Categories</h4><p>Very similar to <code>tags</code>,  add <code>type: categories</code> to <code>blog/source/categories/index.md</code> file so it looks like:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line"><span class="built_in">date</span>: 2022-07-20 00:05:15</span><br><span class="line"><span class="built_in">type</span>: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>Go to a post article header section and add <code>categories: Hexo</code>, now you have category set up as well.<br><img src="https://images-934f5794-0619-11ed-b939-0242ac120002.s3.us-west-2.amazonaws.com/categories+_+Jay's+Blog.png" alt="Alt"></p>
+<h3 id="Enable-Social-Media-links"><a href="#Enable-Social-Media-links" class="headerlink" title="Enable Social Media links"></a>Enable Social Media links</h3><h3 id="Enable-Article-reads-and-total-visits"><a href="#Enable-Article-reads-and-total-visits" class="headerlink" title="Enable Article reads and total visits"></a>Enable Article reads and total visits</h3>
       
     </div>
 
@@ -294,7 +316,16 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-07-19 23:35:12" itemprop="dateModified" datetime="2022-07-19T23:35:12-07:00">2022-07-19</time>
+      <time title="Modified: 2022-07-20 00:32:36" itemprop="dateModified" datetime="2022-07-20T00:32:36-07:00">2022-07-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a>
+        </span>
     </span>
 
   

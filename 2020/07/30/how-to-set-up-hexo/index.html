@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"yoursite.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.12.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yoursite.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.12.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":null,"activeClass":"disqus"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="BackgroundHaving previously used Vuepress to build Phonebox’s developer API documentation site, I came across another great product&#x2F;framework for static website building, Hexo. For someone whose">
 <meta property="og:type" content="article">
@@ -27,6 +27,7 @@
 <meta property="og:site_name" content="Jay&#39;s Blog">
 <meta property="og:description" content="BackgroundHaving previously used Vuepress to build Phonebox’s developer API documentation site, I came across another great product&#x2F;framework for static website building, Hexo. For someone whose">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://external-preview.redd.it/x3W_tPGBToPGjhcrWquMJiDxXFwsTX3yCeAqomZkjxY.png?auto=webp&s=c2fcff59adb0d468306e4fb6367fa387a455186e">
 <meta property="og:image" content="https://images-934f5794-0619-11ed-b939-0242ac120002.s3.us-west-2.amazonaws.com/blog-1.png">
 <meta property="og:image" content="https://images-934f5794-0619-11ed-b939-0242ac120002.s3.us-west-2.amazonaws.com/blog-2.png">
 <meta property="og:image" content="https://images-934f5794-0619-11ed-b939-0242ac120002.s3.us-west-2.amazonaws.com/blog-3.png">
@@ -35,11 +36,11 @@
 <meta property="og:image" content="https://images-934f5794-0619-11ed-b939-0242ac120002.s3.us-west-2.amazonaws.com/Google+Domains+-+DNS+(1).png">
 <meta property="og:image" content="https://images-934f5794-0619-11ed-b939-0242ac120002.s3.us-west-2.amazonaws.com/Pages.png">
 <meta property="article:published_time" content="2020-07-31T06:15:00.000Z">
-<meta property="article:modified_time" content="2022-07-20T06:21:18.033Z">
+<meta property="article:modified_time" content="2022-07-20T06:35:12.628Z">
 <meta property="article:author" content="Gary Bao">
 <meta property="article:tag" content="‘Gary Bao’, &#39;Gary Yutong Bao&#39;, &#39;Yutong Bao&#39;">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://images-934f5794-0619-11ed-b939-0242ac120002.s3.us-west-2.amazonaws.com/blog-1.png">
+<meta name="twitter:image" content="https://external-preview.redd.it/x3W_tPGBToPGjhcrWquMJiDxXFwsTX3yCeAqomZkjxY.png?auto=webp&s=c2fcff59adb0d468306e4fb6367fa387a455186e">
 
 
 <link rel="canonical" href="http://yoursite.com/2020/07/30/how-to-set-up-hexo/">
@@ -117,7 +118,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Background"><span class="nav-number">1.</span> <span class="nav-text">Background</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Background"><span class="nav-number">1.</span> <span class="nav-text">Background</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-by-Step-Guide"><span class="nav-number">2.</span> <span class="nav-text">Step-by-Step Guide</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-hexo-cli-using-npm"><span class="nav-number">2.1.</span> <span class="nav-text">Install hexo-cli using npm.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Write-blog-using-Markdown"><span class="nav-number">2.2.</span> <span class="nav-text">Write blog using Markdown</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Change-theme-to-Next-theme"><span class="nav-number">2.3.</span> <span class="nav-text">Change theme to Next theme</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Configure-Next-theme-to-enable-other-features-such-as-commenting"><span class="nav-number">2.4.</span> <span class="nav-text">Configure Next theme to enable other features such as commenting.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hosting-and-Deploying"><span class="nav-number">2.5.</span> <span class="nav-text">Hosting and Deploying</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Custom-Domain"><span class="nav-number">2.6.</span> <span class="nav-text">Custom Domain</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Conclusion"><span class="nav-number">3.</span> <span class="nav-text">Conclusion</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -206,9 +207,23 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-07-19 23:21:18" itemprop="dateModified" datetime="2022-07-19T23:21:18-07:00">2022-07-19</time>
+      <time title="Modified: 2022-07-19 23:35:12" itemprop="dateModified" datetime="2022-07-19T23:35:12-07:00">2022-07-19</time>
     </span>
 
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2020/07/30/how-to-set-up-hexo/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/30/how-to-set-up-hexo/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
   
 </div>
 
@@ -220,11 +235,24 @@
     
     <div class="post-body" itemprop="articleBody">
         <h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><p>Having previously used <a target="_blank" rel="noopener" href="https://vuepress.vuejs.org/">Vuepress</a> to build <a target="_blank" rel="noopener" href="https://developer.gophonebox.com/APIReference/">Phonebox’s developer</a> API documentation site, I came across another great product&#x2F;framework for static website building, <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/index.html">Hexo</a>. For someone whose CSS skills can definitely be sharpened more, a static site generation framework like Hexo is great to create a customized internet presence. </p>
-<!-- ```python
-array = []
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">![Alt Text](https://external-preview.redd.it/x3W_tPGBToPGjhcrWquMJiDxXFwsTX3yCeAqomZkjxY.png?auto=webp&amp;s=c2fcff59adb0d468306e4fb6367fa387a455186e)</span><br><span class="line"></span><br><span class="line">For me, software development has never been just simply writing code. The amount of work takes to __define product features__, __explore user case scenarios__, __document and diagram systems__, __design and architect solutions__, __insist on proper development methodologies__, __testing, launching__, __operation, collecting user feedbacks__, etc, all are equally important. And undermining any could easily result in the difference between a project success or failure, or a startup surviving or closing-down. I will use this blog to write a mix of projects and industries that I have encountered in the tech career.  </span><br><span class="line"></span><br><span class="line">Most times I found programming at work is about following some documentation, running into errors, then searching and cracking until the error is cleared and the code is working as expected. And without further ado, I will go over quickly __how I set up this Hexo Blog__.  </span><br><span class="line"></span><br><span class="line">--------------------------------------------------------</span><br><span class="line">## Step-by-Step Guide</span><br><span class="line"></span><br><span class="line">### Install ``hexo-cli`` using ``npm``. </span><br><span class="line">1. Pre-requisite: [``homebrew``](https://brew.sh/), [``node``](https://stackoverflow.com/questions/19827752/what-is-the-best-way-to-install-nodejs-on-osx) and ``npm``</span><br><span class="line">2. Install `hexo-cli`: ``npm install -g hexo-cli``</span><br><span class="line">3. Initialize a hexo blog: `hexo init blog`</span><br><span class="line">4. To test `hexo` is installed successfully, </span><br><span class="line">    a. Create a new hexo post: `hexo new test_my_site`</span><br><span class="line">    b. Generate hexo websites: `hexo g` (`hexo generate`)</span><br><span class="line">    c. Run Hexo locally: `hexo s` (`hexo serve`)</span><br><span class="line">    d. View demo post: open `localhost:4000` in browser </span><br><span class="line">5. 🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳</span><br><span class="line"></span><br><span class="line">### Write blog using Markdown </span><br><span class="line">Each post is written using markdown file. It might be slower to discuss __complex business requirements__, __architecture design__, or __user case scenarios__ using Markdown where other tools such as __Google Docs__, __Jira__, and __diagrams.net__ suit better. But markdown is great and convenient for writing  technical documentation and guidelines. This is a great [guideline](https://www.markdownguide.org/basic-syntax/) for Markdown syntaxes. </span><br><span class="line"></span><br><span class="line">Hexo also supports powerful customization through different themes. And each theme provides more features beyond the default theme. </span><br><span class="line"></span><br><span class="line">Note here that Markdown has its limitations in supporting nested bullet points. So try to limit using too much nested bullet points or else hexo and the theme it&#x27;s using might experience error in rendering. </span><br><span class="line"></span><br><span class="line">### Change theme to `Next` theme </span><br><span class="line"></span><br><span class="line">To add [`next`](`https://github.com/next-theme/hexo-theme-next) as a theme, first install `next`. </span><br><span class="line">``` bash</span><br><span class="line">$ cd blog</span><br><span class="line">$ git clone https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-<p>Note here that you may see some documents referencing another next-theme repo as <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next">https://github.com/next-theme/hexo-theme-next</a>. This is a legacy repo that contains older version of <code>next-theme</code>. I have opened an <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/issues/546">issue</a> on <code>next-theme</code> GitHub repo to address this. </p>
-<p>Once <code>next-theme</code> has been installed under the path <code>hexo-blog/themes/next</code>. Go to Hexo config file <code>_config.yml</code> under the root directory and change the theme to next.  <code>theme: next</code><br> <img src="https://images-934f5794-0619-11ed-b939-0242ac120002.s3.us-west-2.amazonaws.com/blog-1.png" alt="Alt Text"></p>
+<p><img src="https://external-preview.redd.it/x3W_tPGBToPGjhcrWquMJiDxXFwsTX3yCeAqomZkjxY.png?auto=webp&s=c2fcff59adb0d468306e4fb6367fa387a455186e" alt="Alt Text"></p>
+<p>For me, software development has never been just simply writing code. The amount of work takes to <strong>define product features</strong>, <strong>explore user case scenarios</strong>, <strong>document and diagram systems</strong>, <strong>design and architect solutions</strong>, <strong>insist on proper development methodologies</strong>, <strong>testing, launching</strong>, <strong>operation, collecting user feedbacks</strong>, etc, all are equally important. And undermining any could easily result in the difference between a project success or failure, or a startup surviving or closing-down. I will use this blog to write a mix of projects and industries that I have encountered in the tech career.  </p>
+<p>Most times I found programming at work is about following some documentation, running into errors, then searching and cracking until the error is cleared and the code is working as expected. And without further ado, I will go over quickly <strong>how I set up this Hexo Blog</strong>.  </p>
+<hr>
+<h2 id="Step-by-Step-Guide"><a href="#Step-by-Step-Guide" class="headerlink" title="Step-by-Step Guide"></a>Step-by-Step Guide</h2><h3 id="Install-hexo-cli-using-npm"><a href="#Install-hexo-cli-using-npm" class="headerlink" title="Install hexo-cli using npm."></a>Install <code>hexo-cli</code> using <code>npm</code>.</h3><ol>
+<li>Pre-requisite: <a target="_blank" rel="noopener" href="https://brew.sh/"><code>homebrew</code></a>, <a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/19827752/what-is-the-best-way-to-install-nodejs-on-osx"><code>node</code></a> and <code>npm</code></li>
+<li>Install <code>hexo-cli</code>: <code>npm install -g hexo-cli</code></li>
+<li>Initialize a hexo blog: <code>hexo init blog</code></li>
+<li>To test <code>hexo</code> is installed successfully,<br> a. Create a new hexo post: <code>hexo new test_my_site</code><br> b. Generate hexo websites: <code>hexo g</code> (<code>hexo generate</code>)<br> c. Run Hexo locally: <code>hexo s</code> (<code>hexo serve</code>)<br> d. View demo post: open <code>localhost:4000</code> in browser </li>
+<li>🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳</li>
+</ol>
+<h3 id="Write-blog-using-Markdown"><a href="#Write-blog-using-Markdown" class="headerlink" title="Write blog using Markdown"></a>Write blog using Markdown</h3><p>Each post is written using markdown file. It might be slower to discuss <strong>complex business requirements</strong>, <strong>architecture design</strong>, or <strong>user case scenarios</strong> using Markdown where other tools such as <strong>Google Docs</strong>, <strong>Jira</strong>, and <strong>diagrams.net</strong> suit better. But markdown is great and convenient for writing  technical documentation and guidelines. This is a great <a target="_blank" rel="noopener" href="https://www.markdownguide.org/basic-syntax/">guideline</a> for Markdown syntaxes. </p>
+<p>Hexo also supports powerful customization through different themes. And each theme provides more features beyond the default theme. </p>
+<p>Note here that Markdown has its limitations in supporting nested bullet points. So try to limit using too much nested bullet points or else hexo and the theme it’s using might experience error in rendering. </p>
+<h3 id="Change-theme-to-Next-theme"><a href="#Change-theme-to-Next-theme" class="headerlink" title="Change theme to Next theme"></a>Change theme to <code>Next</code> theme</h3><p>To add <a href="%60https://github.com/next-theme/hexo-theme-next"><code>next</code></a> as a theme, first install <code>next</code>. </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+<p>Note here that you may see some documents referencing another <code>next-theme</code> repo as <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next">https://github.com/next-theme/hexo-theme-next</a>. This is a legacy repo that contains older version of <code>next-theme</code>. I have opened an <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/issues/546">issue</a> on <code>next-theme</code> GitHub repo to address this. </p>
+<p>Once <code>next-theme</code> has been installed under the path <code>hexo-blog/themes/next</code>. Go to Hexo config file <code>_config.yml</code> under the root directory and change the theme to <code>next</code>.  <code>theme: next</code><br> <img src="https://images-934f5794-0619-11ed-b939-0242ac120002.s3.us-west-2.amazonaws.com/blog-1.png" alt="Alt Text"></p>
 <h3 id="Configure-Next-theme-to-enable-other-features-such-as-commenting"><a href="#Configure-Next-theme-to-enable-other-features-such-as-commenting" class="headerlink" title="Configure Next theme to enable other features such as commenting."></a>Configure <code>Next</code> theme to enable other features such as commenting.</h3><p>First, you need to set up a Comment service. For this, I use <a target="_blank" rel="noopener" href="https://disqus.com/">Disqus</a>. Follow the instruction on Disqus to set up a Disqus Service.<br>Once set up successfully, grab the <code>short name</code> generated by Disqus. It will be used to identify and connect your comment site to your blog site. </p>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/10936984/what-happens-if-someone-else-uses-my-disqus-shortname">Here</a> is a nice explanation on what is short name and how to configure trusted domain on Disqus. </p>
@@ -242,7 +270,7 @@ array = []
 <p>Deploy </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
 <p>Visit your GitHub Page to see your blog live 🥳! </p>
-<p><strong>Custom Domain</strong><br>I use <a target="_blank" rel="noopener" href="https://domains.google.com/">Google Domain</a> to register and maintain my personal domains. </p>
+<h3 id="Custom-Domain"><a href="#Custom-Domain" class="headerlink" title="Custom Domain"></a>Custom Domain</h3><p><strong>Goggle Domain</strong><br>I use <a target="_blank" rel="noopener" href="https://domains.google.com/">Google Domain</a> to register and maintain my personal domains. </p>
 <p>Once domain has been created, two things should be configured ideally to make this work. </p>
 <ol>
 <li>Add a <code>CNAME</code> record under DNS config to point it to the GitHub page.<br><img src="https://images-934f5794-0619-11ed-b939-0242ac120002.s3.us-west-2.amazonaws.com/Google+Domains+-+DNS.png" alt="Alt"></li>
@@ -253,11 +281,21 @@ array = []
 <li>Create <code>A</code> records and point the custom domain to the IP address for GitHub Pages.<br><img src="https://images-934f5794-0619-11ed-b939-0242ac120002.s3.us-west-2.amazonaws.com/Google+Domains+-+DNS+(1).png" alt="Alt"></li>
 </ol>
 <p><a target="_blank" rel="noopener" href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">Here</a> is the official GitHub Pages documentations of setting up custom domain. </p>
-<p>Navigate back to GitHub Pages Settings. Under pages, add the custom domain and make sure to enable <strong>Enforce HTTPS</strong>.<br><img src="https://images-934f5794-0619-11ed-b939-0242ac120002.s3.us-west-2.amazonaws.com/Pages.png" alt="Alt"></p>
+<p><strong>GitHub Pages Hosting</strong><br>Navigate back to GitHub Pages Settings. Under pages, add the custom domain and make sure to enable <strong>Enforce HTTPS</strong>.<br><img src="https://images-934f5794-0619-11ed-b939-0242ac120002.s3.us-west-2.amazonaws.com/Pages.png" alt="Alt"></p>
 <p>There are many other DNS services <strong>GoDaddy</strong>, <strong>Bluehost</strong>, <strong>HostGator</strong>, etc. A nice <a target="_blank" rel="noopener" href="https://www.bluehost.com/help/article/dns-records-explained">article</a> briefly talks about DNS records. </p>
 <hr>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>In terms of hosting static blog site, GitHub Page seems to be the most popular and recommended route. Some other alternatives such as <code>Heroku</code> is also good, except for free versions Heroku will de-allocate the cloud server resources to other users if the site doesn’t get hit for a while. Also I am using <code>AWS S3</code> to host all images in these posts, and only referencing the external link. </p>
-<p>Hexo setup is very similar to other static website framework such as Vuepress in a way that most of the <em>styling</em>, <em>routing</em>, <em>add-on integration</em> work is done within the <code>_config.yml</code> file (or <code>config.js</code> for Vuepress). I plan to gradually add more features such as <em>tagging</em>, <em>sidebar</em> to this blog as I continue to fulfill this technical blog. I will also explore to add more interactive code blocks or design diagrams to help talk about some past projects and product features. </p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>A few things to note about when configuring the blog, themes, and writing in Markdown. </p>
+<ol>
+<li><p>I’ve noticed the blog behaves inconsistently when the Markdown article comes with too many nested bullet points. As much as I like to write a technical documentation using different headings, bullet points and table of contents, here it’s better to stay to simple headings and avoid nested bullet points to make sure the markdown article can render successfully. </p>
+</li>
+<li><p>For <code>next-theme</code> there appear to be different sources of installation. And one of these sources is outdated legacy versions. See detail <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/issues/546">issue</a> for why this happens. Make sure to download the latest stable release version. </p>
+</li>
+<li><p>For many customization features, make sure the documentation works with the latest version of <code>next-theme</code> as well. </p>
+</li>
+<li><p>A lot customization comes with modification to the <code>next-theme</code>‘s <code>_config.yml</code> file. And because this file was downloaded and installed directly from <code>GitHub</code> repo, any modifications to it is not easy to be uploaded to your own blog GitHub repo. Best to maintain a consistent local backup for it.</p>
+</li>
+</ol>
+<p>I plan to gradually add more features such as <em>tagging</em>, <em>sidebar</em> to this blog as I continue to fulfill this technical blog. I will also explore to add more interactive code blocks or design diagrams to help talk about some past projects and product features. </p>
 
     </div>
 
@@ -278,6 +316,11 @@ array = []
 
 
 
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
 </div>
   </main>
 
@@ -314,6 +357,8 @@ array = []
 
 
 
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"magicgary-com","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js"></script>
 
 </body>
 </html>
